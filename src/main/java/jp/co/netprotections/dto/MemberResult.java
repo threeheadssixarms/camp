@@ -21,24 +21,4 @@ public class MemberResult {
 	public void setEnlistedPropriety(boolean enlistedPropriety) {
 		this.enlistedPropriety = enlistedPropriety;
 	}
-//	public void checkPropriety() {
-//	if (eventPlanning <= 1) {
-//		enlistedPropriety = false;
-//		return;
-//	}
-//	if (coordination <= 1) {
-//		enlistedPropriety = false;
-//		return;
-//	}
-//	if ((cognitation + coordination + programmingKnowledge + infrastructureKnowledge) == 0) {
-//		enlistedPropriety = false;
-//		return;
-//	}
-//	if ((eventPlanning + cognitation + coordination + programmingKnowledge + infrastructureKnowledge) <= 10) {
-//		enlistedPropriety = false;
-//		return;
-//	}	
-//	enlistedPropriety=true;
-//}
-
 }

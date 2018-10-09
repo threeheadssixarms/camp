@@ -12,6 +12,17 @@ public class Member {
 		
 	}
 
+	public Member(String memberName, int eventPlanning, int cognitation, int coordination, int programmingKnowledge,
+			int infrastructureKnowledge) {
+		super();
+		this.memberName = memberName;
+		this.eventPlanning = eventPlanning;
+		this.cognitation = cognitation;
+		this.coordination = coordination;
+		this.programmingKnowledge = programmingKnowledge;
+		this.infrastructureKnowledge = infrastructureKnowledge;
+	}
+
 	public String getMemberName() {
 		return memberName;
 	}
