@@ -1,15 +1,24 @@
 package jp.co.netprotections.dto;
 
+import lombok.Getter;
+import lombok.Setter;
+
 /**
  * @author p.le
  * 隊員のクラスです。
  */
 public class Member {
+	@Getter @Setter
 	private String memberName; //隊員氏名
+	@Getter @Setter
 	private int eventPlanning; //イベント企画力
+	@Getter @Setter
 	private int cognitation; //思考力
+	@Getter @Setter
 	private int coordination; //調整力
+	@Getter @Setter
 	private int programmingKnowledge; //ログラム製造力
+	@Getter @Setter
 	private int infrastructureKnowledge; //基盤理解
 
 	public Member(String memberName, int eventPlanning, int cognitation, int coordination, int programmingKnowledge,
@@ -21,14 +30,6 @@ public class Member {
 		this.coordination = coordination;
 		this.programmingKnowledge = programmingKnowledge;
 		this.infrastructureKnowledge = infrastructureKnowledge;
-	}
-
-	public String getMemberName() {
-		return memberName;
-	}
-
-	public void setMemberName(String memberName) {
-		this.memberName = memberName;
 	}
 
 	/**
@@ -66,45 +67,5 @@ public class Member {
 		if((programmingKnowledge < 0) || (programmingKnowledge >5)) return true;
 		if((infrastructureKnowledge < 0) || (infrastructureKnowledge >5)) return true;
 		return false;
-	}
-
-	public int getEventPlanning() {
-		return eventPlanning;
-	}
-
-	public void setEventPlanning(int eventPlanning) {
-		this.eventPlanning = eventPlanning;
-	}
-
-	public int getCognitation() {
-		return cognitation;
-	}
-
-	public void setCognitation(int cognitation) {
-		this.cognitation = cognitation;
-	}
-
-	public int getCoordination() {
-		return coordination;
-	}
-
-	public void setCoordination(int coordination) {
-		this.coordination = coordination;
-	}
-
-	public int getProgrammingKnowledge() {
-		return programmingKnowledge;
-	}
-
-	public void setProgrammingKnowledge(int programmingKnowledge) {
-		this.programmingKnowledge = programmingKnowledge;
-	}
-
-	public int getInfrastructureKnowledge() {
-		return infrastructureKnowledge;
-	}
-
-	public void setInfrastructureKnowledge(int infrastructureKnowledge) {
-		this.infrastructureKnowledge = infrastructureKnowledge;
 	}
 }

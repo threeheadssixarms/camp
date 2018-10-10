@@ -65,7 +65,7 @@ public class CampApplicationTests {
 		ArrayList<Member> memberList = new ArrayList<Member>();
 		memberList.add(new Member("thao", 1, 2, 3, 4, 5));
 		memberList.add(new Member("thao2", 1, 2, 3, 4, 8));
-		request.setmemberCandidatesList(memberList);
+		request.setMemberCandidatesList(memberList);
 		assertTrue(request.isInvalid());
 	}
 	
@@ -75,7 +75,7 @@ public class CampApplicationTests {
 		ArrayList<Member> memberList = new ArrayList<Member>();
 		memberList.add(new Member("thao", 1, 2, 3, 4, 5));
 		memberList.add(new Member("thao2", 1, 2, 3, 4, 3));
-		request.setmemberCandidatesList(memberList);
+		request.setMemberCandidatesList(memberList);
 		assertFalse(request.isInvalid());
 	}
 	
@@ -83,7 +83,7 @@ public class CampApplicationTests {
 	public void emptyRequest() {
 		MemberJudgeRequestDto request = new MemberJudgeRequestDto ();
 		ArrayList<Member> memberList = new ArrayList<Member>();
-		request.setmemberCandidatesList(memberList);
+		request.setMemberCandidatesList(memberList);
 		assertTrue(request.isInvalid());
 	}
 
