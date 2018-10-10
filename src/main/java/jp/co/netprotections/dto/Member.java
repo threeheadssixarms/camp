@@ -7,10 +7,6 @@ public class Member {
 	private int coordination;
 	private int programmingKnowledge;
 	private int infrastructureKnowledge;
-	
-	public Member() {
-		
-	}
 
 	public Member(String memberName, int eventPlanning, int cognitation, int coordination, int programmingKnowledge,
 			int infrastructureKnowledge) {

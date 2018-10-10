@@ -15,7 +15,6 @@ import jp.co.netprotections.dto.MemberJudgeRequestDto;
 import jp.co.netprotections.dto.MemberJudgeResponseDto;
 
 @Controller
-
 public class MemberJudgeController {
 	@ResponseBody
 	@RequestMapping(value="/camp", method = RequestMethod.POST, consumes = org.springframework.http.MediaType.APPLICATION_JSON_VALUE, produces =  org.springframework.http.MediaType.APPLICATION_JSON_VALUE)

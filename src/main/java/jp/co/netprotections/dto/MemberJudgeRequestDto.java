@@ -5,9 +5,8 @@ import java.util.ArrayList;
 public class MemberJudgeRequestDto {
 	
 	private ArrayList<Member> memberCandidatesList;
-	public MemberJudgeRequestDto () {
-
-    }
+	
+	public MemberJudgeRequestDto() {}
 	
 	public MemberJudgeRequestDto (ArrayList<Member> memberCandidatesList) {
 		this.memberCandidatesList = memberCandidatesList;

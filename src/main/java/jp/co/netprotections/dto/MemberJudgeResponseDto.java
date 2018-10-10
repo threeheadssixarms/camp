@@ -5,9 +5,6 @@ import java.util.ArrayList;
 public class MemberJudgeResponseDto {
 	private ArrayList<MemberResult> judgedCandidatesResultList = new ArrayList<MemberResult>();
 
-	public MemberJudgeResponseDto() {
-	}
-
 	public ArrayList<MemberResult> getJudgedCandidatesResultList() {
 		return judgedCandidatesResultList;
 	}
