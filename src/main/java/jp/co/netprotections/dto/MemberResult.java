@@ -1,8 +1,8 @@
 package jp.co.netprotections.dto;
 
 public class MemberResult {
-	private String memberName;
-	private boolean enlistedPropriety;
+	private String memberName; //隊員氏名
+	private boolean enlistedPropriety; //入隊可否
 	
 	public MemberResult(String memberName, boolean enlistedPropriety) {
 		super();
