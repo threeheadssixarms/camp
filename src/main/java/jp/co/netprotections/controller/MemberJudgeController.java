@@ -1,6 +1,7 @@
 package jp.co.netprotections.controller;
 
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.converter.HttpMessageNotReadableException;
 import org.springframework.stereotype.Controller;
@@ -13,6 +14,8 @@ import org.springframework.web.bind.annotation.ResponseStatus;
 
 import jp.co.netprotections.dto.MemberJudgeRequestDto;
 import jp.co.netprotections.dto.MemberJudgeResponseDto;
+import jp.co.netprotections.service.MemberJudgeService;
+import jp.co.netprotections.service.impl.MemberJudgeServiceImpl;
 
 /**
  * @author p.le
@@ -20,6 +23,10 @@ import jp.co.netprotections.dto.MemberJudgeResponseDto;
  */
 @Controller
 public class MemberJudgeController {
+	
+	@Autowired
+	MemberJudgeService memberJudgeService;
+		
 	/**
 	 * Controllerの実行メソッドです.
 	 * @param MemberJudgeRequestDto request
@@ -28,8 +35,8 @@ public class MemberJudgeController {
 	@ResponseBody
 	@RequestMapping(value="/camp", method = RequestMethod.POST, consumes = org.springframework.http.MediaType.APPLICATION_JSON_VALUE, produces =  org.springframework.http.MediaType.APPLICATION_JSON_VALUE)
 	public MemberJudgeResponseDto camp(@RequestBody MemberJudgeRequestDto request) {
-		if (request.isInvalid()) return null;
-		return MemberJudgeResponseDto.generateResponseFrom(request);
+		if (MemberJudgeServiceImpl.checkInvalidRequest(request)) return null;
+		return MemberJudgeServiceImpl.generateResponseFrom(request);
 	}
 	
 	/**
