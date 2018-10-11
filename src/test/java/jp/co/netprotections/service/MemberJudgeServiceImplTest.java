@@ -17,7 +17,7 @@ import org.springframework.test.context.junit4.SpringRunner;
 
 /**
  * @author p.le
- * 
+ * サービステストのクラスです。
  */
 @RunWith(SpringRunner.class)
 @SpringBootTest

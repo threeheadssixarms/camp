@@ -24,8 +24,8 @@ import jp.co.netprotections.service.impl.MemberJudgeServiceImpl;
 @Controller
 public class MemberJudgeController {
 	
-	@Autowired
-	MemberJudgeService memberJudgeService;
+//	@Autowired
+//	MemberJudgeService memberJudgeService;
 		
 	/**
 	 * Controllerの実行メソッドです.
