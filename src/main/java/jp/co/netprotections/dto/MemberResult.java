@@ -9,6 +9,8 @@ public class MemberResult {
 	@Getter @Setter
 	private boolean enlistedPropriety; //入隊可否
 	
+	public MemberResult () {}
+	
 	public MemberResult(String memberName, boolean enlistedPropriety) {
 		super();
 		this.memberName = memberName;
