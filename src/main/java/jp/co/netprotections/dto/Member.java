@@ -20,10 +20,11 @@ public class Member {
 	private int programmingKnowledge; //ログラム製造力
 	@Getter @Setter
 	private int infrastructureKnowledge; //基盤理解
+	
+	public Member() {} 
 
 	public Member(String memberName, int eventPlanning, int cognitation, int coordination, int programmingKnowledge,
 			int infrastructureKnowledge) {
-		super();
 		this.memberName = memberName;
 		this.eventPlanning = eventPlanning;
 		this.cognitation = cognitation;

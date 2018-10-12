@@ -1,7 +1,5 @@
 package jp.co.netprotections.controller;
 
-
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.converter.HttpMessageNotReadableException;
 import org.springframework.stereotype.Controller;
@@ -14,7 +12,6 @@ import org.springframework.web.bind.annotation.ResponseStatus;
 
 import jp.co.netprotections.dto.MemberJudgeRequestDto;
 import jp.co.netprotections.dto.MemberJudgeResponseDto;
-import jp.co.netprotections.service.MemberJudgeService;
 import jp.co.netprotections.service.impl.MemberJudgeServiceImpl;
 
 /**
@@ -22,11 +19,7 @@ import jp.co.netprotections.service.impl.MemberJudgeServiceImpl;
  * リクエストを処理するControllerクラスです.
  */
 @Controller
-public class MemberJudgeController {
-	
-//	@Autowired
-//	MemberJudgeService memberJudgeService;
-		
+public class MemberJudgeController {		
 	/**
 	 * Controllerの実行メソッドです.
 	 * @param MemberJudgeRequestDto request
